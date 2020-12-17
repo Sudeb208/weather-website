@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>links}}
+<body>
+     {{>navbar}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 temp_form"  >  
+                <from class="temp_form">
+                    <input type="text" id="cityName" placeholder="enter your city name">
+                    <input class="submit" type="submit" value="Search" id="submitBtn" >
+                </from>
+            </div> 
+            {{!-- <div class="col-md-12 col-12 mx-auto" >  --}}
+                <div class="tempauterInformation">
+                    <div class="top_layer">
+                        <P id="day">Tuseday</P>
+                        <p id="tiday_data">13 oct</p>
+                    </div>
+                    <div class="main_layer">
+                        <P id="city_name"> Get output here</P>
+                        <div class="middle_layer data_hide">
+                            <p ><span id="tem">0</span><sup>o</sup></p>
+                            <p id="temo_status"> <i id="weatherLogo" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            {{!-- </div> --}}
+        </div>
+    </div>
+
+     {{>footer}}
+
+    <script src="js/main.js"></script>
+</body>
+</html>
