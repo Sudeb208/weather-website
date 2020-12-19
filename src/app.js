@@ -26,7 +26,7 @@ app.use(express.static(static_path));
 
 
 // create server
-const port = 8005;
+const port =process.env.PORT || 8005;
 //home page
 app.get("/", (req, res)=>{
  res.render("index");
